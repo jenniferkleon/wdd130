@@ -1,38 +1,15 @@
-#content {
-    max-width: 1600px;
-    margin: 0 auto; 
-    background-color: #c2c5bb;
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Permanent+Marker&display=swap');
 
 .icon {
-    width: 80px;
+    width: 45px;
+    height: 45px;
 }
 
 .logo {
     width: 80px;
 }
 
-img { 
-    max-width: 100%;  
-}
-
-#hero-img {
-    width: 100%;
-}
-nav a {
-    text-align: center;
-    background-color: #c89d7c;
-    color: black;
-    text-decoration: none;
-}
-
-nav  a:hover {
-    background-color: #c89d7c;
-    color:red;
-}
-
-#hero-msg h1, #hero-msg h4{
+#hero-msg h1, #hero-msg {
     text-align: center;
 }
 
@@ -52,6 +29,39 @@ body {
     background-color: #c2c5bb;
 }
 
+nav {
+    background-color: #c89d7c;
+    padding: 1em;
+}
+
+nav a {
+    text-align: center;
+    background-color: #c89d7c;
+    color: black;
+    text-decoration: none;
+    padding: .5em.5em;
+}
+
+nav li {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10;
+}
+
+nav ul {
+  list-style: none; 
+  margin: 0; 
+}
+
+nav  a:hover {
+    background-color: #c89d7c;
+    color:red;
+}
+#content {
+    max-width: 1600px;
+    margin: 0 auto; 
+    background-color: #c2c5bb;
+
+}
 header {
     background-color: #c89d7c;
 }
@@ -73,9 +83,10 @@ header {
     color: black;
 }
 
-h4 {
+h1,h2,h3,h4,h5,h6 {
     color: black;
 }
+
 
 .msg, h2 {
     color: black;
@@ -84,6 +95,13 @@ h4 {
 
 .msg p {
     color: black;
+}
+img { 
+    max-width: 100%;  
+}
+
+#hero-img {
+    width: 100%;
 }
 
 footer {
@@ -102,3 +120,11 @@ footer a {
 footer a:hover {
     color: red;
 } 
+
+footer p {
+    font-size: 1.2em;
+}
+
+.socialmedia {
+    padding: 10px;
+}
