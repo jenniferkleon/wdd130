@@ -1,173 +1,158 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
-.icon {
-    width: 45px;
-    height: 45px;
-    padding-top: 10px;
-}
 
-.logo {
-    width: 80px;
-}
-
-#logo_link {
-    padding-top: 5px;
-
-}
-#hero-box {
-    text-align:center ;
-}
-
-#hero-msg h1, #hero-msg {
-    text-align: center;
-}
-
-.button-box {
-    text-align: center;
-  
-
-    
-}
-
-main section {
-    text-align: center;
-    font-family: 'Shadows Into Light', Verdana, Tahoma;
-}
-
-main section img {
-    box-sizing: border-box;
-}
-#background {
-    height: 725px;
-    background-color:#556B2F;
-    ;
-}
 body {
     background-color: #c2c5bb;
-    font-family: 'Shadows Into Light', Verdana, Tahoma;
-    font-size: 22px;
     margin: 0;
     padding: 0;
 }
+#content {
+    background-color: #c2c5bb;
+    max-width: 1600px;
+    margin:0 auto;
+}
 
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+    padding: 10px;
+    line-height:normal;
+    font-family:'Permanent Marker', Georgia, Garamond, sans-serif;
+    font: size 10px; ;
+    color: black;
+}
+p {
+    padding: 10px;
+    line-height:normal;
+    font-family:'Permanent Marker', Georgia, Garamond, sans-serif;
+    font: size 10px; ;
+    color: black;
+}
 nav {
     background-color: #556B2F;
-    font-size: 1em;
-    padding: 35px;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
 }   
 
 nav a {
-    text-align: center;
+   
     background-color: #556B2F;
-    color: black;
+    color:black;
     text-decoration: none;
-    padding: .5em.5em;
-    font-family: 'Shadows Into Light', Verdana, Tahoma;
+    text-align: center;
+    padding: .75em.75em;
+    line-height: 1em;
+    font-family: 'Shadows Into Light', Verdana, Tahoma, sans-serif;
+    font-size: 1em;
 }
 
-nav li {
-    font-size: 10px;
-}
-
-nav ul {
-  list-style: none; 
-  margin: 0; 
-}
 
 nav  a:hover {
-    background-color: black;
     color:black;
-}
-#content {
-    max-width: 1600px;
-    margin: 0 auto; 
     background-color: white;
-
+    
+}
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.logo {
+    width: 80px;
+    height: 80px;
+    position: relative;
 }
 header {    
+    display: grid;
+    grid-template-columns: 150px auto;
     background-color: #556B2F;
-}
-
-
-.book, .join {
-    font-size: 18px;
-    background-color:#c89d7c;
-    color: black;
-    text-decoration: none;
-    padding: 15px 30px;
-    margin-top: 50px;
-    border-radius: 5px;
-}
-
-.book:hover, .join:hover {
-    background-color: white;
-    color: black;
-}
-
-
-.home-title {
-    font-size: 2em;
-    color: black;
-    font-family: 'Permanent Marker', Georgia, Garamond;
-    margin-top: 10px;
-}
-
-.rivers-card, .camping-card, .rapids-card {
-    margin:200px 0;
-}
-
-.card-img {
-    border: 10px solid #556B2F; 
-
-}
-h1,h2,h3,h4,h5,h6 {
-    color: black;
-}
-
-.msg {
-    background-color: #556B2F;
-    line-height: 1.5em;
-    padding: 35px;
-}
-
-h2 {
-    font-family:  'Permanent Marker', Georgia, Garamond;
-    margin: 0;
-}
-
-.msg, h2 {
-    color: black;
-}
-
-.msg p {
-    font-size: .8em;
-    font-family: 'Shadows Into Light', Verdana, Tahoma;
-    color: black;
-    padding-bottom: 15px;
 }
 img { 
     max-width: 100%;  
 }
-
+main section img {
+    box-sizing: border-box;
+}
+main,section {
+    text-align: center;  
+}
+.home-title {
+    font-size: 2.25em;
+    color: black;
+    font-family: 'Permanent Marker', Georgia, Garamond;
+    margin-top: 10px;
+}
 #hero-img {
-    max-width: 100%;
-    
+   width: 100%; 
+}
+#hero-msg {
+    text-align: center;
 }
 
+.book, .join {
+    text-decoration: none;
+    padding: 15px;
+    background-color:#c89d7c;
+    color: black;
+}
+.book:hover, .join:hover {
+    background-color: white;
+    color: black;
+}
+.button-box {
+    text-align: center;
+    margin: 5em; 
+}
+.card-img {
+    width: 30%;
+    height: 300px;
+    border: 10px solid #556B2F; 
+    border-radius: 50%;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin:200px 0;
+}
+.icon {
+    width: 80px;
+}
+#background {
+        height: 750px;
+        background-color:#556B2F;
+}
+.mountains {
+    width: 100%;
+}
+.msg {
+    background-color: #556B2F;
+    padding: 55px;
+}
+.msg, h2 {
+    color: black;
+}
+.msg p {
+    font-size: .8em;
+    color: black;
+    padding-bottom: 15px;
+}
+#info {
+    font: .75em;
+    color: black;
+}
 footer {
     background-color: #556B2F;
     color: black;
     padding: 25px 50px;
-    margin-top: 200px;
-
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 footer a {
+    font-size: .75em;
     background-color:#556B2F;
     color:black;
     text-decoration: none;
-    
 }
-
 footer a:hover {
     color: white;
 } 
@@ -176,10 +161,3 @@ footer p {
     font-size: 1.2em;
 }
 
-footer .social img {
-    padding-top: 15px;
-}
-
-.socialmedia {
-    padding: 10px;
-}
