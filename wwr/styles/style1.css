@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    
+}
+#content {
+    background-color: white;
+    max-width: 1600px;
+    margin: 0 auto; 
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    padding: 10px;
+    color: black;
+    line-height: 1em;
+    font-family:'Permanent Marker', Geneva , sans-serif;
+    font-size: 1.75em ;
+}
+
+p {
+    padding: 10px;
+    color: black;
+    line-height: 1em;
+    font-family:'Shadows Into Light', Georgia , sans-serif;
+    font-size: 1.75em;  
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #556B2F;
+    padding: 1em;
+    margin-top: 100px;  
+}   
+
+nav a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: .75em .75em;
+    line-height: 1em;
+    font-family:'Permanent Marker','Shadows Into Light', sans-serif;
+    font-size: 1em;
+}
+nav  a:hover {
+    background-color: white;
+    color:black;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.logo {
+    width: 150px;
+    position: relative;
+}
+header {   
+    display: grid; 
+    grid-template-columns: 150px auto;
+    background-color: #556B2F;
+}
+
+img { 
+    max-width: 100%;  
+}
+main section img {
+    box-sizing: border-box;
+}
+
+main, section {
+    text-align: center;
+}
+.home-title {
+    margin-top: 10px;
+    font-size: 2.25em;
+    color: black;
+}
+#hero {
+    display: grid;
+   grid-template-columns: 1fr 3fr 1fr;
+   text-align: center;
+}
+#hero-box {
+   grid-column: 1/11;
+   grid-row: 1/3;
+   text-align:center;
+}
+#hero-img {
+    grid-column: 1/11;
+    grid-row: 1/3;
+    width: 100%; 
+}
+
+#hero-msg {
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    text-align: center;
+   
+}
+#hero-msg h1, h4 {
+    color: white;
+    }
+
+.book, .join {
+    background-color:#c89d7c;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.book:hover, .join:hover {
+    background-color: white;
+    color: black;
+    margin-top: 50px;
+
+}
+#button-box {
+    text-align: center;
+    margin: 55em;  
+}
+
+.card-img {
+    width: 100%;
+    height: 300px;
+    box-shadow: 4px 4px 4px #000000;
+    border: 2px  #556B2F solid;
+    transition:transform .5s;
+    border-radius: 50%; 
+}
+
+.card-img:hover {
+        opacity: .6;
+        transform: scale(1.1);
+    }
+
+.rivers-card, .camping-card, .rapids-card {
+    margin:25px auto;
+    width: 90%;
+}
+
+.rivers-card {
+    grid-column: 3/5;
+    grid-row: 2/3;
+}
+
+.camping-card {
+    grid-column: 6/8;
+    grid-row: 2/3;
+}
+
+.rapids-card {
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+.icon {
+    width: 80px;
+    margin-top: 25px;
+}
+
+#background {
+    height: auto;
+    background-color:#556B2F;
+}
+  .home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    justify-content: space-around;
+    align-items: center;
+
+}
+.mountains{
+   grid-column: ;
+    width: 100%;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.msg {
+    background-color: tan;
+    padding: 55px;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.msg p {
+    font-size:.75em;
+    color: black;
+}
+
+.msg h2 {
+   font-size: 1.25em;
+}
+
+
+#info {
+    font-size: .75em;
+    color: black;
+}
+
+footer {
+   
+    background-color: #556B2F;
+    padding: 25px 50px;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    background-color:#556B2F;
+    color:black;
+    text-decoration: none;
+    font-family:'Shadows Into Light', Verdana, sans-serif;
+    margin-bottom: auto;
+}
+
+footer a:hover {
+    color: black;
+    background-color: white;
+} 
+
+
+
+footer .social img {
+    padding-top: 15px;
+    font-size: .75em;
+}
+
+/* ContactUs CSS
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    
+}
+#contactus_content {
+    background-color: white;
+    max-width: 1600px;
+    margin: 0 auto;    
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #556B2F;
+    padding: 1em;
+}   
+
+nav a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 35px;
+    line-height: 1em;
+    font-family:'Permanent Marker','Shadows Into Light', sans-serif;
+    font-size: 1em;
+}
+nav  a:hover {
+    background-color: white;
+    color:black;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.logo {
+    width: 80px;
+    height: 100px;
+    position: relative;
+}
+header {   
+    display: grid; 
+    grid-template-columns: 150px auto;
+    background-color: #556B2F;
+}
+
+img { 
+    max-width: 100%;  
+}
+main section img {
+    box-sizing: border-box;
+}
+
+main section {
+    text-align: center;
+}
+.contactus-title {
+    margin-top: 10px;
+    font-size: 2em;
+    color: black;
+}
+
+#hero_contact_img {
+    width: 100%; 
+}
+
+#hero-msg {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 100px;
+}
+#hero-msg h1,h4 {
+    color: white;
+    }
+
+.book, .join {
+    font-size: 18px;
+    background-color:#c89d7c;
+    color: black;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-family:'Shadows Into Light','Georgia', sans-serif;
+}
+
+.book:hover, .join:hover {
+    background-color: white;
+    color: black;
+    margin-top: 50px;
+
+}
+button-box {
+    text-align: center;
+    margin: 55em;  
+    font-family:'Shadows Into Light','Georgia', sans-serif;
+}
+
+.contactus-img {
+    width: 200%;
+    border: 10px solid #556B2F;
+    border-radius: 50%; 
+}
+
+.contactus-img:hover {
+        opacity: .6;
+        transform: scale(1.1);
+    }
+
+    .guide1-card, .guide2-card, .guide3-card {
+    margin:200px 0;
+}
+
+.guide1-card{
+    width: 300px;
+    grid-column: 1/5;
+    grid-row: 1/3;
+}
+
+.guide2-card{
+    width: 300px;
+    grid-column: 5/9;
+    grid-row: 1/3;
+    
+}
+
+.guide3-card{
+    width: 300px;
+    grid-column: 10/11;
+    grid-row: 1/3;
+}
+.icon {
+    width: 80px;
+}
+
+
+#hero {
+     display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px; 
+    }
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    text-align:center;
+}
+.contactus_grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 2em;
+}
+
+.contactus_msg {
+    grid-column: 1/11;
+    grid-row: 6/10;
+    height: 725px;
+    background-color: #556B2F;
+    padding: 35px;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.contactus_msg p {
+    padding: 10px;
+    color: white;
+    line-height: 1em;
+    font-family:'Shadows Into Light','Georgia', sans-serif;
+    font-size: 20PX; 
+    padding-bottom: 15px;
+   
+}
+
+h2 {
+    font-family:  'Permanent Marker', Georgia, Garamond;
+    margin: 0;
+}
+
+
+#info {
+    font-size: .75em;
+    color: black;
+    font-family:'Shadows Into Light','Verdana', sans-serif;
+}
+
+footer {
+   
+    background-color: #556B2F;
+    color: black;   
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+footer a {
+    background-color:#556B2F;
+    color:black;
+    text-decoration: none;
+    font-family:'Shadows Into Light', Verdana, sans-serif;
+    margin-bottom: auto;
+}
+
+footer a:hover {
+    color: white;
+} 
+
+footer p {
+    font-size: .75em;
+}
+
+footer .social img {
+    padding-top: 15px;
+    font-size: .75em;
+}
+
+.socialmedia {
+    padding: 10px;
+    font-size: .75em;
+}
+*/
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
