@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Noto+Serif:ital@1&family=Roboto+Slab&display=swap');
 
 body {
     background-color:  #C2C5BB;
@@ -36,7 +36,6 @@ header {
   }
   #hamnav {
       justify-content: space-around;
-      align-self: right;
       padding: 1em;
   }   
   
@@ -66,7 +65,7 @@ h1 {
     padding: 20px;
     color: black;
     line-height: 2.2em;
-    font-family:'Permanent Marker', Geneva, sans-serif;
+    font-family:Roboto, 'Noto Serif', Lora, 'sans-serif';
     font-size: 3.5em;    
 }
 
@@ -74,8 +73,12 @@ h2 {
     text-align: left;
     color: black;
     line-height: 1.1em;
-    font-family:'Permanent Marker', Geneva, sans-serif;
-    font-size: 2em;  
+    font-size: 2em; 
+    font-family:Roboto, 'Noto Serif', Lora, 'sans-serif';
+}
+
+h3 {
+    font-family: Roboto, 'Noto Serif', Lora, 'sans-serif';
 }
 
 
@@ -84,7 +87,6 @@ h2 {
     display: grid;
     grid-template-columns: repeat(10, 10%);
     grid-template-rows: repeat(10, 10%);
-    grid: gap 40px;
     justify-content: center;
    
   }
@@ -112,7 +114,6 @@ h2 {
     grid-column: 1/6;
     grid-row: 2/3;
     padding: 10px;
-    align-self: left;
     text-align: left;
     margin-left: 25px;
     margin-top: 100px;
@@ -122,11 +123,10 @@ h2 {
     grid-column: 1/5;    
     grid-row: 3/5;
     padding: 10px;
-    align-self: left;
     text-align: left;
     margin-top: 100px;
     margin-left: 25px;
-    font-family:'Permanent Marker', Geneva, sans-serif;
+    font-family: 'Noto Serif', Lora, Roboto;
 
   }
  
@@ -152,13 +152,12 @@ h2 {
  .aside-paragraph {
     grid-column: 7/10;
     grid-row: 5/6;
-    align-self: left;
     text-align: left;
     margin-top: 100px;
     padding: 10px;
     font-size: 1.75em;
     line-height: 1.50em;
-    font-family:'Permanent Marker', Geneva, sans-serif;
+
  }
  footer {
     background-color: #c8911a;  
@@ -188,7 +187,6 @@ h2 {
     margin-top: 100px;
     margin-left: 60px;
     text-align: left;
-    font-family:'Permanent Marker', Geneva, sans-serif;
  }
 #blog-grid {
     display: grid;
@@ -203,7 +201,6 @@ h2 {
     margin-left: 30px;
     grid-column: 4/10;
     grid-row: 1/5;
-    align-self: right;
 
 }
 .blog1-img {
@@ -242,7 +239,6 @@ h2 {
     color: white;
     margin-top: 60px;
     margin-left: 5px;
-    font-family:'Permanent Marker', Geneva, sans-serif;
 }
 
 .top-paragraph {
@@ -252,7 +248,6 @@ h2 {
     grid-row: 2/16;
     padding: 15px;
     align-self: center;
-    font-family:'Permanent Marker', Geneva, sans-serif;
 }
 
 #middle-grid {
@@ -296,7 +291,6 @@ h2 {
     padding: 10px;
     margin-top: -25px;
     text-align: center;
-    font-family:'Permanent Marker', Geneva, sans-serif;
 }
 .middle-paragraph {
     grid-column: 3/8;
@@ -305,7 +299,7 @@ h2 {
     line-height: 1.4em;
     color: #fff;
     text-align: left;
-    font-family:'Permanent Marker', Geneva, sans-serif;
+
 }
 #bottom-grid {
     display: grid;
@@ -319,7 +313,6 @@ h2 {
     margin-left: 30px;
     grid-column: 4/10;
     grid-row: 3/5;
-    align-self: right;
 }
 .blog4-img {
     width: 300px;
@@ -332,12 +325,11 @@ h2 {
 
 .bottom-paragraph {
     grid-column: 10/13;
-    grid-row: 2/6;
-    padding: 20px;
-    text-align: left;
+    grid-row: 2/5;
+    padding: 10px;
+    text-align: left;   
     margin-left: 15px;
     z-index: 1;
-    font-family:'Permanent Marker', Geneva, sans-serif;
   }
   .bottom-rectangle {
     background-color: #c8911a;
@@ -363,18 +355,17 @@ h2 {
   .bottom-title {
     color: #fff;
     font-size: 2em;
-    padding: 10px;
+    padding: 5px;
     grid-column: 8/8;
     grid-row: 7/7;
     align-content: center;
     z-index: 1;
-    font-family:'Permanent Marker', Geneva, sans-serif;
 
   }
   #feedback {
     grid-column: 15/18;
-    grid-row: 5/5;
-    color: block;
+    grid-row: 12/12;
+    color: black;
     position: sticky;
     text-align: left;
     top: 0;
@@ -416,17 +407,16 @@ form {
     color: white;
     grid-column: 15/17;
     grid-row: 7/7;
-    margin-top: 25px;
-    font-family:'Permanent Marker', Geneva, sans-serif;
+    margin-top: 40px;
+    margin-left: 25px;
 }
 
 
 form button {
     background-color: gray;
     border-radius: 5px;
-    margin-left: 15px;
+    margin-left: 50px;
     padding: 10px;
     margin-top: 20px;
-    color: white;
-    font-family:'Permanent Marker', Geneva, sans-serif;
+    
 }

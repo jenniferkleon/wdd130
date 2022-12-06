@@ -35,7 +35,7 @@
                 <div id="top-background"></div>
                      <img class="blog1-img" src="images/Eclipise_runng.jpg" alt="Eclipse running storefront">
                      <img class="blog2-img" src="images/running_company.png" alt="Eclipse running storefront">
-                     <section class="top-circle"></section>
+                     <div class="top-circle"></div>
                      <h3 class="top-title">Shopping </h3>
                      <p class="top-paragraph">There are some great locally owned businesses that runners in reno recommend. Check out the two we have highlighted here for you. Reno Running Company and Eclipse Running. Both stores take you through a running or walking video gait analysis and finish with recommendations to help you achieve your goals.</p>
                 </div>
@@ -43,7 +43,7 @@
              <div id=middle-grid>
                 <div id="middle-background"></div>
                      <img class="blog3-img" src="images/renoscaper.png" alt="Eclipse running storefront">
-                     <section class="middle-circle"></section>
+                     <div class="middle-circle"></div>
                      <h3 class="middle-title">Races </h3>
                      <p class="middle-paragraph">Sometimes you may not want to run alone, or you are looking to join a community. Perhaps you are looking for an event to train for. Regardless of what it may be we have got you covered!</p>
                 
@@ -52,36 +52,27 @@
                 <div id="bottom-background"></div>    
                      <img class="blog4-img" src="images/thumbnail.jpg" alt="brunette women faceshot">
                      <p class="bottom-paragraph">When I was younger I loved to run. I was faster than all of the boys into 7th and 8th grade. My Dad was a runner in college and my older brother also ran. Unfortunately, at the age 14 I started to make poor decisions and started smoking. I smoked heavily for 25 years and didn't take care of myself. Now at 42 I have quit smoking and lost 35 pounds and started to run. I found my passion again and nothing can hold be back. It's not easy, but I can do hard things.</p>
-                     <section class="bottom-circle"></section>
-                     <section class="bottom-rectangle"></section>
-                     <section class="form-square"></section>
-                     <section class="form-circle"></section>
+                     <div class="bottom-circle"></div>
+                     <div class="bottom-rectangle"></div>
+                     <div class="form-square"></div>
+                     <div class="form-circle"></div>
                      <h3 class="form-title">Join Our Blog</h3>
                     <h3 class="bottom-title">Inspiration </h3>      
                 <div id="blog-background"></div>  
                  <div id="feedback"></div>
                     <form action="/my-handling-form-page" method="post">
-                        <ul>
-          
-                            <ul style="list-style-type:none"></ul>
-
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="user_name" />
-                         
-                            <label for="mail">E-mail</label>
-                            <input type="email" id="mail" name="user_email" />
-                         
-                          <ul class="button">
+                       
+                          <label for="name">Name:</label>
+                          <input type="text" id="name" name="user_name"> 
+                          <label for="mail">E-mail:</label>
+                          <input type="email" id="mail" name="user_email">
+                       
                             <button type="submit">Submit</button>
-                         
-                        </ul>
-                      </form>
-
-                    
-                  
-             </div>
+                      
+                      </form> 
             </div>
-         </main>
+     </main>
+    
 
          <footer>
             <p id="info">Running In Reno &copy; 2022 - Jennifer Leon - WDD-130-09</p>
@@ -104,8 +95,7 @@
               // stop the form from doing the default action.
               e.preventDefault();
               // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-              feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-              // make the feedback element visible.
+              feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you, please check your email for further instructions.'
               feedbackElement.style.display = "block";
               // add a class to move everything down so our message doesn't cover it.
               document.body.classList.toggle('moveDown');
