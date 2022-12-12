@@ -1,90 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Running In Reno | Trails</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Running In Reno | Trails</title>
+  <link type="text/css" rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <div id="content">
-    <header>
+        <header>
        
 
         <nav id="hamnav">
-            <label for="hamburger">&#9776;</label>
-            <input type="checkbox" id="hamburger">
-           
-            <div id="hamitems">
-              <a href="index.html">Home</a>
-              <a href="trails.html">Trails</a>
-              <a href="blog.html">Blog</a>
-            </div>
-          </nav>    
+            <div class="dropdown">
+                <button class="dropbtn">&#9776; Menu</button>
+                <div class="dropdown-content">
+                  <a href="index.html">Home</a>
+                  <a href="trails.html">Trails</a>
+                  <a href="blog.html">Blog</a>
+                  <a href="site-plan.html">Site-Plan</a>
+                </div>
+              </div>
+          </nav>
          </header> 
          <main>
-
-            <div id="trails-heading">
-                <section id="trails-msg">
-                    <img class="logo-img" src="images/reno_in_reno.png" alt="logo image">
-                    <h2 class="trails-title">Running In Reno </h2>
-                </section>
+            <div id="blog-heading">
+                    <img class="bloglogo-img" src="images/reno_in_reno.png" alt="logo image">
+                    <h2 class="blog-title">Running In Reno </h2>
             </div>
-            
-            <div class="trails-grid">
-                <div id="column-heading">
-                    <section id="column1-title">
-                        <h2 class="column1-title">Intermediate/Advanced </h2>
-                    </section>
-                    <section id="column2-title">
-                        <h2 class="column2-title">Beginner </h2>
-                    </section>
-                </div>
 
-                <section class="hidden-card">
-                  <img class="trail-img" src="images/HunterCreek2.jpg" alt="trail in hills">
-                  <h2> Hidden Valley County Park Trail</h2>
-                  <p>Explore this 4.2-mile loop trail near Reno, Nevada. Generally considered a challenging route, it takes an average of 2 h 30 min to complete. This is a very popular area for birding, hiking, and mountain biking, so you'll likely encounter other people while exploring. The best times to visit this trail are March through November. Dogs are welcome and may be off-leash in some areas.</p>
-                </section>
-
-                <section class="steamboat-card">
-                    <img class="trail-img" src="images/SteamBoat.jpg" alt="trail entrance surronded by brush">
-                    <h2> Steamboat Ditch Trail</h2>
-                    <p>Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc. Quam euismod sem, semper ut potenti pellentesque quisque. In eget sapien sed, sit duis vestibulum ultricies, placerat morbi amet vel, nullam in in lorem vel. In molestie elit dui dictum, praesent nascetur pulvinar sed, in dolor pede in aliquam, risus nec error quis pharetra. Eros metus quam augue suspendisse, metus rutrum risus erat in.  In ultrices quo ut lectus, etiam vestibulum urna a est, pretium luctus euismod nisl, pellentesque turpis hac ridiculus massa. Venenatis a taciti dolor platea, curabitur lorem platea urna odio, convallis sit pellentesque lacus proin. Et ipsum velit diam nulla, fringilla vel tincidunt vitae, elit turpis tellus vivamus, dictum adipiscing convallis magna id. Viverra eu amet sit, dignissim tincidunt volutpat nulla tincidunt, feugiat est erat dui tempor, fusce tortor auctor vestibulum. Venenatis praesent risus orci, ante nam volutpat erat. Cursus non mollis interdum maecenas, consequat imperdiet penatibus enim, tristique luctus tellus eos accumsan, ridiculus erat laoreet nunc.</p>
-                  </section>
-
-                  <section class="marina-card">
-                    <img class="trail-img" src="images/Marina.jpg" alt="marina with rolling hills in background">
-                    <h2> Sparks Marina</h2>
-                    <p>As two cities that share the Truckee Meadows, the cities of Sparks and Reno have grown together over the past several decades forming one metro area.The Sparks Marina, which has become a go-to place in Sparks for outdoor recreation is right in the heart of the metro area. Get some fresh air with the locals with stand-up paddleboard and kayak rentals, stretch your legs along the two-mile walking and biking trail that surrounds The Marina.
-                        This is a paved course that is well lite at night.</p>
-                  </section>
-
-                  <section class="riverwalk-card">
-                    <img class="trail-img" src="images/riverpath.jpg" alt="paved path next to river">
-                    <h2> Reno Truckee River Trail</h2>
-                    <p>A fun paved urban walk through downtown and along the Truckee River. The trail can be continued in either direction.
-                        Experience this 3.5-mile out-and-back trail near Reno, Nevada. Generally considered an easy route. This is a very popular area for birding, road biking, and running, so you'll likely encounter other people while exploring.</p>
-                  </section>
-
-                  <div id="background"></div>
-            </div>
-         </main>
-                  
-        
-
-         <footer>
-            <p id="info">Running In Reno &copy; 2022 - Jennifer Leon - WDD-130-09</p>
-            <div class="social">
-              <a target="_blank" href="https://facebook.com"><img src="images/facebook.png" alt="fb icon"></a>
-              
-              <a target="_blank" href="https://twitter.com"><img src="images/twitter.png" alt="twitter icon"></a>
-             
-              <a target="_blank" href="https://instagram.com"><img src="images/instagram.png" alt="instagram icon"> </a>
-            </div>
-          </footer>
-
-            
+    <div class="cards">
+        <div class="card1">
+          <img class="card__image" src="images/HunterCreek2.jpg" alt="">
+          <div class="card__content">
+            <h2> Hidden Valley County Park Trail</h2>
+            <p>
+                Explore this 4.2-mile loop trail near Reno, Nevada. Generally considered a challenging route, it takes an average of 2 h 30 min to complete. This is a very popular area for birding, hiking, and mountain biking, so you'll likely encounter other people while exploring. The best times to visit this trail are March through November. Dogs are welcome and may be off-leash in some areas.
+            </p>
+          </div>
         </div>
-    </body>
-  </html>
+        <div class="card2">
+          <img class="card__image" src="images/SteamBoat.jpg" alt="">
+          <div class="card__content">
+            <h2> Steamboat Ditch Trail</h2>
+            <p>
+                This trail is a wide, dusty, well-worn double track that parallels Steamboat Ditch, a seasonally-flowing irrigation ditch that carries water from the Truckee River in Verdi to farms and ranches in South Reno. It is a 15.4 mile moderately trafficked out and back trail that features beautiful wild flowers and is rated as moderate to advanced.
+                
+                
+            </p>
+          </div>
+        </div>
+        <div class="card3">
+          <img class="card__image" src="images/Marina.jpg" alt="">
+          <div class="card__content">
+            <h2> Sparks Marina</h2>
+            <p>
+                A fun paved urban walk through downtown and along the Truckee River. The trail can be continued in either direction.
+                Experience this 3.5-mile out-and-back trail near Reno, Nevada. Generally considered an easy route. This is a very popular area for birding, road biking, and running, so you'll likely encounter other people while exploring.
+            </p>
+          </div>
+        </div>
+        <div class="card4">
+          <img class="card__image" src="images/riverpath.jpg" alt="">
+          <div class="card__content">
+            <h2> Reno Truckee River Trail</h2>
+            <p>
+                A fun paved urban walk through downtown and along the Truckee River. The trail can be continued in either direction.
+                Experience this 3.5-mile out-and-back trail near Reno, Nevada. Generally considered an easy route. This is a very popular area for birding, road biking, and running, so you'll likely encounter other people while exploring.
+            </p>
+            <div id="background"></div>
+           
+          </div>
+        </main>
+        <footer>
+          <p id="info">Running In Reno &copy; 2022 - Jennifer Leon - WDD-130-09</p>
+          <div class="social">
+            <a target="_blank" href="https://facebook.com"><img src="images/facebook.png" alt="fb icon"></a>
+            
+            <a target="_blank" href="https://twitter.com"><img src="images/twitter.png" alt="twitter icon"></a>
+           
+            <a target="_blank" href="https://instagram.com"><img src="images/instagram.png" alt="instagram icon"> </a>
+          </div>
+        </footer>
+          
+  </div>
+</body>
+</html>

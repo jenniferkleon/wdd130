@@ -85,7 +85,8 @@ h3 {
 
 .home-grid {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(8, 10%);
   }
 
   .logo-img {
@@ -103,29 +104,26 @@ h3 {
     grid-row: 1/1;
     align-self:center;
     padding: 20px;
-  
+    margin-top: 50%;
     margin-left: 75px;
     text-align:left;
 
   }
  .paragraph-title {
     grid-column: 1/6;
-    grid-row: 2/2;
+    grid-row: 2/3;
     padding: 10px;
     text-align: left;
     margin-left: 25px;
+    margin-top: 100px;
   }
   
-  P {
-    font-family: 'Noto Serif', Lora, Roboto;
-
-  }
-  #blog-heading p {
+  p {
     grid-column: 1/5;    
-    grid-row: 2/5;
+    grid-row: 3/5;
     padding: 10px;
     text-align: left;
-    margin-top: 150px;
+    margin-top: 100px;
     margin-left: 25px;
     font-family: 'Noto Serif', Lora, Roboto;
 
@@ -134,16 +132,16 @@ h3 {
   .paragraph-image1 {
     max-width: 100%;  
     width: 700px;
-    padding: 30px;
-    grid-column: 1/8;
-    grid-row: 1/9;
+    padding: 20px;
+    grid-column: 1/6;
+    grid-row: 5/9;
     border: 20px;
     margin-top: 20px;
 
   }
   .paragraph-image2 {
     width: 700px;   
-    grid-column: 9/10;
+    grid-column: 6/10;
     grid-row: 1/5;
     padding: 10px;
     margin-top: 100px;
@@ -152,8 +150,8 @@ h3 {
 
  .aside-paragraph {
     grid-column: 7/10;
-    grid-row: 2/5;
-    text-align: center;
+    grid-row: 5/6;
+    text-align: left;
     margin-top: 100px;
     padding: 10px;
     font-size: 1.75em;
@@ -244,24 +242,11 @@ h3 {
 
 .top-paragraph {
     background-color: #c8911a;
-    box-shadow: 4px 4px 4px black;
     line-height: 1.4em;
     grid-column: 15/18;
     grid-row: 2/16;
     padding: 15px;
     align-self: center;
-}
-
-.top-title:hover {
-    opacity: .9;
-    transform: scale(2);
-    margin-top: 25px;
-}
-
-.top-paragraph:hover {
-    opacity: .9;
-    transform: scale(1.5);
-    margin-top: 25px;
 }
 
 #middle-grid {
@@ -271,7 +256,6 @@ h3 {
 #middle-background {
     grid-column:  1/11;
     grid-row: 1/1;
-    box-shadow: 4px 4px 4px black;
     max-width: 1600px;
     height: 250px;
     margin-left: 50px;
@@ -314,8 +298,8 @@ h3 {
     line-height: 1.4em;
     color: #fff;
     text-align: left;
-}
 
+}
 #bottom-grid {
     display: grid;
     grid-template-columns: repeat(20, 5%);
@@ -323,7 +307,6 @@ h3 {
 }
 #bottom-background {
     background-color: white;
-    box-shadow: 4px 4px 4px black;
     width: 700px;
     height: 550px;
     margin-left: 30px;
@@ -343,9 +326,8 @@ h3 {
     grid-column: 10/13;
     grid-row: 2/5;
     padding: 10px;
-    text-align: left; 
-    margin-top: 75px; 
-    margin-left: 25px;
+    text-align: left;   
+    margin-left: 15px;
     z-index: 1;
   }
   .bottom-rectangle {
@@ -379,12 +361,6 @@ h3 {
     z-index: 1;
 
   }
-  .bottom-title:hover {
-    opacity: .9;
-    transform: scale(1.2);
-    margin-top: 25px;
-    margin-left: -10px;
-}
   #feedback {
     grid-column: 15/18;
     grid-row: 12/12;
@@ -403,7 +379,6 @@ h3 {
     width: 250px;
     height: 200px;
     background-color: midnightblue;
-    box-shadow: 4px 4px 4px black;
     grid-column: 15/17;
     grid-row: 7/7;
 }
@@ -411,15 +386,9 @@ h3 {
     width: 200px;
     height: 200px;
     background-color: #c8911a;
-    box-shadow: 4px 4px 4px black;
     grid-column: 16/17;
     grid-row: 3/3;
     border-radius: 50%;
-}
-.form-title:hover {
-    opacity: .9;
-    transform: scale(1.5);
-    margin-top: 100px;
 }
 
 .form-title {
@@ -450,11 +419,7 @@ form button {
     margin-top: 20px;
     
 }
-form button:hover {
-    background-color: white;
-    color: black;
-  box-shadow: 4px 4px 4px #000000;
-}
+
 /*Trails*/
 
 
@@ -491,13 +456,12 @@ form button:hover {
     padding-bottom: 30px;
 }
 
-
-.cards {
+.cards * {
     box-sizing: border-box;
 }
 
 .card__image {
-    width: 99%;
+    width: 100%;
     height: 150px;
     object-fit: cover;
     display: block;
@@ -538,3 +502,16 @@ form button:hover {
     border-left: 2px solid #333333;
 }
 
+.card__info i {
+    font-size: 0.9em;
+    margin-right: 8px;
+}
+
+.card__link {
+    color: #64968c;
+    text-decoration: none;
+}
+
+.card__link:hover {
+    text-decoration: underline;
+}
